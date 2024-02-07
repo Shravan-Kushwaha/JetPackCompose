@@ -38,5 +38,11 @@
     <string name="fast_delivery">Fast Delivery</string>
     <string name="good_service">Good Service</string>
     <string name="next">Next</string>
+    <string name="get_started_now">Get Started Now</string>
+    <string name="login">Login</string>
+    <string name="signup">Sign Up</string>
+    <string name="eating_drinking_enjoying">Eating. Drinking. Enjoying.</string>
+    <string name="login_or_signup">Login or Sign up to explore delicious food and meals.</string>
+    <string name="nothing" />
 
 </resources>
