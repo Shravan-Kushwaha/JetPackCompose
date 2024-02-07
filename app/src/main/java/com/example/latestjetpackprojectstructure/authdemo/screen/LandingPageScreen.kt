@@ -3,6 +3,7 @@ package com.example.latestjetpackprojectstructure.authdemo.screen
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.offset
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -23,7 +24,9 @@ import com.example.latestjetpackprojectstructure.authdemo.data.ScreenEnum
 @Composable
 fun LandingPageScreen(navController: NavHostController) {
     Column(
-        modifier = Modifier.background(Color.White),
+        modifier = Modifier
+            .background(Color.White)
+            .offset(y = (-50).dp),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {

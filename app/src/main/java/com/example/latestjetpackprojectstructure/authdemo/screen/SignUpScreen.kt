@@ -16,7 +16,7 @@ import com.example.latestjetpackprojectstructure.authdemo.components.TopHeader
 @Composable
 fun SignUpScreen(navController: NavHostController) {
     Column(
-        modifier = Modifier.background(Color.White).offset(y=50.dp),
+        modifier = Modifier.background(Color.White).offset(y=30.dp),
         verticalArrangement = Arrangement.Top,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
