@@ -19,6 +19,7 @@ import com.example.latestjetpackprojectstructure.authdemo.components.CommonSpace
 import com.example.latestjetpackprojectstructure.authdemo.components.NormalText
 import com.example.latestjetpackprojectstructure.authdemo.components.TopHeader
 import com.example.latestjetpackprojectstructure.authdemo.data.ScreenEnum
+import com.example.latestjetpackprojectstructure.ui.theme.ThemeColor2
 
 
 @Composable
@@ -35,7 +36,7 @@ fun LandingPageScreen(navController: NavHostController) {
             imageId = R.drawable.study_office, modifier = Modifier
         )
         CommonSpacer(w = 20.dp)
-        BoldText(stringId = R.string.eating_drinking_enjoying)
+        BoldText(stringId = R.string.eating_drinking_enjoying, fontColor = ThemeColor2)
         CommonSpacer(w = 10.dp)
         NormalText(stringId = R.string.login_or_signup)
         CommonSpacer(w = 50.dp)

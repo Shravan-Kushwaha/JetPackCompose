@@ -44,5 +44,7 @@
     <string name="eating_drinking_enjoying">Eating. Drinking. Enjoying.</string>
     <string name="login_or_signup">Login or Sign up to explore delicious food and meals.</string>
     <string name="nothing" />
-
+    <string name="forgot_password">Forgot Password</string>
+    <string name="terms_and_condition">Terms and Conditions </string>
+    <string name="terms_and_condition_detail">By Signing up you are agree terms and conditions></string>
 </resources>

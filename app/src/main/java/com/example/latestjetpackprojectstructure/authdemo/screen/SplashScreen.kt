@@ -12,7 +12,6 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -50,6 +49,7 @@ import com.example.latestjetpackprojectstructure.authdemo.components.NormalText
 import com.example.latestjetpackprojectstructure.authdemo.data.ScreenEnum
 import com.example.latestjetpackprojectstructure.ui.theme.Pink80
 import com.example.latestjetpackprojectstructure.ui.theme.ThemeColor
+import com.example.latestjetpackprojectstructure.ui.theme.ThemeColor2
 
 val splashImages = listOf(
     R.drawable.food,
@@ -173,7 +173,7 @@ fun OnBoardingPager(navController: NavHostController, pagerState: PagerState) {
             )
 
             CommonSpacer(w = 20.dp)
-            BoldText(stringId = Title[it])
+            BoldText(stringId = Title[it], fontColor = ThemeColor2)
 
             CommonSpacer(w = 20.dp)
             NormalText(stringId = SubTitle[it])
@@ -188,7 +188,7 @@ fun OnBoardingPager(navController: NavHostController, pagerState: PagerState) {
                 CommonButton(
                     navController = navController,
                     text = R.string.get_started_now,
-                    route = ScreenEnum.HOME.name
+                    route = ScreenEnum.LANDING.name
                 )
             }
 
@@ -209,12 +209,12 @@ fun SkipButton(navController: NavHostController, modifier: Modifier) {
             modifier = Modifier
                 .clickable {
                     navController.popBackStack()
-                    navController.navigate(ScreenEnum.HOME.name)
+                    navController.navigate(ScreenEnum.LANDING.name)
                 },
             text = stringResource(id = R.string.skip),
-            color = Color.Gray,
+            color = ThemeColor2,
             style = TextStyle(
-                fontWeight = FontWeight.Normal,
+                fontWeight = FontWeight.SemiBold,
                 fontSize = 14.sp,
                 textAlign = TextAlign.Center
             )
@@ -222,7 +222,7 @@ fun SkipButton(navController: NavHostController, modifier: Modifier) {
         Icon(
             imageVector = Icons.Default.KeyboardArrowRight,
             contentDescription = "",
-            tint = Color.Gray,
+            tint = ThemeColor2,
         )
 
     }

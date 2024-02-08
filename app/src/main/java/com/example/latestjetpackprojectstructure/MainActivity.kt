@@ -24,6 +24,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.latestjetpackprojectstructure.authdemo.screen.LandingPageScreen
 import com.example.latestjetpackprojectstructure.authdemo.data.ScreenEnum
+import com.example.latestjetpackprojectstructure.authdemo.navigation.MainNavGraph
 import com.example.latestjetpackprojectstructure.authdemo.screen.LoginScreen
 import com.example.latestjetpackprojectstructure.authdemo.screen.SignUpScreen
 import com.example.latestjetpackprojectstructure.authdemo.screen.SplashScreen
@@ -96,25 +97,7 @@ class MainActivity : ComponentActivity() {
                     /**
                      * # 6. Compose Auth Demo
                      * */
-
-                    val navController = rememberNavController()
-                    NavHost(
-                        navController = navController,
-                        startDestination = ScreenEnum.SPLASH.name
-                    ) {
-                        composable(ScreenEnum.SPLASH.name) {
-                            SplashScreen(navController)
-                        }
-                        composable(ScreenEnum.HOME.name) {
-                            LandingPageScreen(navController)
-                        }
-                        composable(ScreenEnum.LOGIN.name) {
-                            LoginScreen(navController)
-                        }
-                        composable(ScreenEnum.SIGNUP.name) {
-                            SignUpScreen(navController)
-                        }
-                    }
+                    MainNavGraph()
 
 
                 }
