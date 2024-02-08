@@ -35,7 +35,9 @@ import com.example.latestjetpackprojectstructure.demo.Lemonade
 import com.example.latestjetpackprojectstructure.ui.theme.LatestJetPackProjectStructureTheme
 import com.example.latestjetpackprojectstructure.ui.theme.md_theme_light_primaryContainer
 import com.example.latestjetpackprojectstructure.ui.theme.md_theme_light_scrim
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     @OptIn(ExperimentalMaterial3Api::class)
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -46,17 +46,16 @@ fun SignUpScreen(navController: NavHostController) {
             CommonTextField("Phone")
             CommonSpacer(w = 10.dp)
             CommonTextField("Password")
-
             CommonSpacer(w = 50.dp)
             CommonButton(
                 navController = navController,
                 text = R.string.signup,
                 route = ScreenEnum.HOME.name
             )
-
             CommonSpacer(w = 50.dp)
             NormalText(
-                stringId = R.string.terms_and_condition_detail
+                stringId = R.string.terms_and_condition_detail,
+                fontColor = ThemeColor2
             )
         }
     }

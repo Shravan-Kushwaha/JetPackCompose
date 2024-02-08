@@ -1,6 +1,9 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+    id ("kotlin-kapt")
+    id("com.google.devtools.ksp")
+    id ("dagger.hilt.android.plugin")
 }
 
 android {
@@ -23,7 +26,10 @@ android {
     buildTypes {
         release {
             isMinifyEnabled = false
-            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
         }
     }
     compileOptions {
@@ -67,4 +73,26 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+    //Retrofit
+    implementation(libs.retrofit)
+    implementation(libs.converter.moshi)
+    implementation(libs.okhttp)
+    implementation(libs.logging.interceptor)
+
+    //Dagger - Hilt
+    kapt(libs.androidx.hilt.compiler)
+    implementation(libs.androidx.hilt.navigation.compose)
+    implementation(libs.hilt.android)
+    kapt(libs.dagger.hilt.android.compiler)
+
+    //Splash Screen
+    implementation(libs.androidx.core.splashscreen)
+
+    //Gson
+    implementation (libs.converter.gson)
+    //Room
+    implementation(libs.androidx.room.runtime)
+    kapt(libs.androidx.room.compiler)
+    implementation(libs.androidx.room.ktx)
 }
