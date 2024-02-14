@@ -9,7 +9,6 @@ interface ApiService {
         //   const val IMAGE_URL = "https://image.tmdb.org/t/p/original/"
         const val BASE_URL = "http://localhost:3000/"
     }
-
     @POST("login")
     suspend fun login(): LoginResponse
 

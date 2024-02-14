@@ -15,7 +15,7 @@ android {
         minSdk = 24
         targetSdk = 34
         versionCode = 1
-        versionName = "1.0"
+        versionName = "1.0.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -44,7 +44,7 @@ android {
     }
 
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.1"
+        kotlinCompilerExtensionVersion = "1.5.9"
     }
     packaging {
         resources {
@@ -85,7 +85,7 @@ dependencies {
     implementation(libs.androidx.hilt.navigation.compose)
     implementation(libs.hilt.android)
     kapt(libs.dagger.hilt.android.compiler)
-
+    kapt(libs.kotlinx.metadata.jvm)
     //Splash Screen
     implementation(libs.androidx.core.splashscreen)
 
@@ -93,6 +93,6 @@ dependencies {
     implementation (libs.converter.gson)
     //Room
     implementation(libs.androidx.room.runtime)
-    kapt(libs.androidx.room.compiler)
+    ksp(libs.androidx.room.compiler)
     implementation(libs.androidx.room.ktx)
 }

@@ -4,24 +4,26 @@ converterGson = "2.9.0"
 converterMoshi = "2.9.0"
 coreSplashscreen = "1.0.1"
 datastorePreferences = "1.0.0"
-hiltAndroidCompiler = "2.45"
+hiltAndroidCompiler = "2.50"
 hiltAndroidGradlePlugin = "2.44.2"
 hiltNavigationCompose = "1.1.0"
-kotlin = "1.9.0"
-coreKtx = "1.10.1"
+kotlin = "1.9.22"
+coreKtx = "1.12.0"
 junit = "4.13.2"
 junitVersion = "1.1.5"
 espressoCore = "3.5.1"
 kotlinGradlePlugin = "1.7.0"
-lifecycleRuntimeKtx = "2.6.1"
+kotlinxMetadataJvm = "0.6.0"
+lifecycleRuntimeKtx = "2.7.0"
 activityCompose = "1.8.2"
-composeBom = "2023.10.01"
-loggingInterceptor = "5.0.0-alpha.3"
-navigationCompose = "2.7.6"
-okhttp = "5.0.0-alpha.3"
+composeBom = "2024.02.00"
+loggingInterceptor = "5.0.0-alpha.11"
+navigationCompose = "2.7.7"
+okhttp = "5.0.0-alpha.11"
 roomCompiler = "2.6.1"
 roomKtx = "2.6.1"
 roomRuntime = "2.6.1"
+ksp="1.9.22-1.0.17"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -53,6 +55,7 @@ androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
 androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationCompose" }
 kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlinGradlePlugin" }
+kotlinx-metadata-jvm = { module = "org.jetbrains.kotlinx:kotlinx-metadata-jvm", version.ref = "kotlinxMetadataJvm" }
 logging-interceptor = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "loggingInterceptor" }
 okhttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttp" }
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "converterMoshi" }
@@ -60,4 +63,5 @@ retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "converte
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+devtoolsKsp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 
