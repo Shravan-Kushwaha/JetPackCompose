@@ -19,15 +19,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Devices
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.navigation.compose.NavHost
-import androidx.navigation.compose.composable
-import androidx.navigation.compose.rememberNavController
-import com.example.latestjetpackprojectstructure.authdemo.screen.LandingPageScreen
-import com.example.latestjetpackprojectstructure.authdemo.data.ScreenEnum
 import com.example.latestjetpackprojectstructure.authdemo.navigation.MainNavGraph
-import com.example.latestjetpackprojectstructure.authdemo.screen.LoginScreen
-import com.example.latestjetpackprojectstructure.authdemo.screen.SignUpScreen
-import com.example.latestjetpackprojectstructure.authdemo.screen.SplashScreen
 import com.example.latestjetpackprojectstructure.demo.DiceWithButtonAndImage
 import com.example.latestjetpackprojectstructure.demo.GreetingImage
 import com.example.latestjetpackprojectstructure.demo.LearnTogether
@@ -36,6 +28,7 @@ import com.example.latestjetpackprojectstructure.ui.theme.LatestJetPackProjectSt
 import com.example.latestjetpackprojectstructure.ui.theme.md_theme_light_primaryContainer
 import com.example.latestjetpackprojectstructure.ui.theme.md_theme_light_scrim
 import dagger.hilt.android.AndroidEntryPoint
+
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {

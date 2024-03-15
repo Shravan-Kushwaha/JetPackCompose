@@ -66,7 +66,6 @@ fun GreetingImage(name: String, from: String, modifier: Modifier = Modifier) {
             name = name,
             from = from,
             modifier = modifier
-
         )
     }
 }
